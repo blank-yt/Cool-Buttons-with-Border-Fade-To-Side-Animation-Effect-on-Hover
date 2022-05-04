@@ -1,0 +1,168 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #424752;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button {
+	margin: 20px;
+	width: 130px;
+	height: 40px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 4px;
+	cursor: pointer;
+	border: none;
+	color: #fff;
+}
+
+.left {
+	background: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.left:before, .left:after {
+	content: '';
+	position: absolute;
+	width: 130px;
+	height: 40px;
+	transition: .8s ease all;
+}
+
+.left:before {
+	overflow: hidden;
+	background: #932e3e40;
+	border-radius: 5px;
+	border: 2px solid #932e3e;
+}
+
+.left:after {
+	width: 0;
+	overflow: hidden;
+	border-bottom: 2px solid #932e3e;
+	border-top: 2px solid #932e3e;
+	transform: translateX(-65px);
+}
+
+.left:hover:before {
+	width: 0;
+	border: none;
+	transform: translateX(-65px);
+}
+
+.left:hover:after {
+	width: 130px;
+	transform: translateX(0);
+}
+
+.left:focus {
+	outline: none;
+}
+
+.left:hover {
+	transition: .3s ease all;
+	color: #f55d76;
+}
+
+.middle {
+	position: relative;
+	display: inline-block;
+	background: #932e3e40;
+	border-radius: 5px;
+	border: 2px solid #932e3e;
+}
+
+.middle:hover {
+	color: #f55d76;
+	border: none;
+	background: transparent;
+}
+
+.middle:before, .middle:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #932e3e;
+	transition: .8s ease all;
+}
+
+.middle:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+.middle:hover:before, .middle:hover:after {
+	width: 100%;
+	transition: .8s ease all;
+}
+
+.middle:hover {
+	transition: .3s ease all;
+}
+
+.right {
+	background: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.right:before, .right:after {
+	content: '';
+	position: absolute;
+	width: 130px;
+	height: 40px;
+	transition: .8s ease all;
+}
+
+.right:before {
+	overflow: hidden;
+	background: #932e3e40;
+	border-radius: 5px;
+	border: 2px solid #932e3e;
+}
+
+.right:after {
+	width: 0;
+	overflow: hidden;
+	border-bottom: 2px solid #932e3e;
+	border-top: 2px solid #932e3e;
+	transform: translateX(65px);
+}
+
+.right:hover:before {
+	width: 0;
+	border: none;
+	transform: translateX(65px);
+}
+
+.right:hover:after {
+	width: 130px;
+	transform: translateX(0);
+}
+
+.right:focus {
+	outline: none;
+}
+
+.right:hover {
+	transition: .3s ease all;
+	color: #f55d76;
+}
